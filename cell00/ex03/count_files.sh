@@ -1,1 +1,1 @@
-ใช้คำสั่งนี้ ls | wc ในterminal
+ใช้คำสั่งนี้ ls | wc ใน terminal
