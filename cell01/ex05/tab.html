@@ -9,18 +9,44 @@
 
 <body>
 
-    <div class="container">
+   <div class="row">
+  <div class="column">
+    <table class="t1">
+      <tr >
+        <th>EIEI </th>
+        <th>SIGMA</th>
+        <th>INT</th>
+      </tr>
+  
+  
+      <tr>
+        <td>Sic</td>
+        <td>Mundus</td>
+        <td>Createusest</td>
+      </tr>
+    </table>
+  </div>
+  <div class="column">
+    <table class="t2">
+      <tr>
+        <th>Fi</th>
+        <th>If</th>
+        <th>Else</th>
+      </tr>
+      <tr>
 
-        <div class="menu">
-            <h1>EIEI</h1>
-            <p>ง่วงมั้ย</p>
-        </div>
-        <div class="content">
-            <h1>สวัสดีคนตรวจ</h1>
-            <p>SIGMA</p>
-        </div>
+      </tr>
+      <tr>
+        <td>GG</td>
+        <td>JJ</td>
+        <td>KK</td>
+      </tr>
+      <tr>
 
-    </div>
+      </tr>
+    </table>
+  </div>
+</div>
 
 
 
@@ -29,26 +55,39 @@
 </html>
 
 <style>
-    .container {
-        display: grid;
-        grid-template-areas: "menu content";
-        grid-template-columns: 1fr 3fr;
-        gap: 5px;
-        background-color: #a6f527;
-        padding: 5px;
-    }
+* {
+  box-sizing: border-box;
+}
 
+.row {
+  display: flex;
+  margin-left:-5px;
+  margin-right:-5px;
+}
 
+.column {
+  flex: 50%;
+  padding: 5px;
+}
 
-    .container>div.menu {
-        grid-area: menu;
-               background-color: rgba(231, 122, 217, 0.8);
-        padding: 10px;
-    }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  background-color: lightblue;
+}
 
-    .container>div.content {
-        grid-area: content;
-               background-color: rgba(240, 3, 3, 0.8);
-        padding: 10px;
-    }
+th, td {
+  text-align: left;
+  padding: 16px;
+  
+}
+
+.t1{
+  background-color: lightblue;
+}
+.t2{
+  background-color: red;
+}
 </style>
