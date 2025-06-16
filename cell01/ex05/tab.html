@@ -7,12 +7,14 @@
 </head>
 <body>
     <h1>asd
-        
+
     </h1>
-    <div class="coutainer">
-
-    </div>
-
+ <div class="container">
+  
+  <div class="menu"><p>dddd<p></div>
+  <div class="content"><h3>Lorem Ipsum</h3><p>Lorem ipsum odor amet, consectetuer adipiscing elit. Ridiculus sit nisl laoreet facilisis aliquet. Potenti dignissim litora eget montes rhoncus sapien neque urna. Cursus libero sapien integer magnis ligula lobortis quam ut.</p></div>
+  
+</div>
 
 
 
@@ -20,16 +22,27 @@
 </html>
 
 <style>
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 5px;
+  background-color: #2196F3;
+  padding: 5px;
+}
+  .container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+  }
 
-    .container {
-        display: grid;
-        grid-template-areas: auto auto;
-        grid-template-columns: auto auto;
-        
-        width: auto;
-        height: auto;
-    }
-
-
+  .container > div.menu {
+    grid-area: menu;
+  }
+  .container > div.content {
+    grid-area: content;
+  }
 
 </style>
