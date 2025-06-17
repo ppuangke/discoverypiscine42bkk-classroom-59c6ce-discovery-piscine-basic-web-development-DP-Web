@@ -13,14 +13,14 @@ body {
     background-color: azure;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
-    padding: 20px;
+    padding: 10px;
     border-radius: 5px;
 }
 
 .profile-card img {
-    max-width: 50%;
-    border-radius: 50%;
-    max-height: 50%;
+    max-width: 90%;
+    border-radius: 5px;
+    max-height: 90%;
 }
 
 .profile-card h1 {
