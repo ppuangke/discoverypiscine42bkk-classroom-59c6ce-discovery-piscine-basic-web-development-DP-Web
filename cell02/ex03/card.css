@@ -34,7 +34,7 @@ body {
 
 .profile-card a {
     text-decoration: none;
-    background-color: aqua;
+    background-color: rgb(22, 78, 78);
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -43,5 +43,5 @@ body {
     transition: background-color 0.3s;
 }
 .profile-card a:hover {
-    background-color:blanchedalmond;
+    background-color:rgb(129, 153, 146);
 }
