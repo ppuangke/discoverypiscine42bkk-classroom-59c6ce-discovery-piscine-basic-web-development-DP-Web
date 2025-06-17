@@ -10,7 +10,7 @@ body {
 
 .profile-card {
     text-align: center;
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     padding: 10px;
@@ -49,9 +49,9 @@ body {
 }
 
 .iei {
-    
+    display: flex;
     margin-top: 20px;
     max-width: 30px;
     max-height: 30px;
-    gap:5px;
+    gap:35px;
 }
