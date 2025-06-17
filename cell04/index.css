@@ -1,8 +1,10 @@
-.ii{
- max-width: 50px;
- max-height: 50px;
- border-radius: 16px;
+.ii {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 16px;
 }
-    body{
-        background-color: black;
-    }
+
+body {
+    background-color: rgb(189, 189, 189);
+    
+}
