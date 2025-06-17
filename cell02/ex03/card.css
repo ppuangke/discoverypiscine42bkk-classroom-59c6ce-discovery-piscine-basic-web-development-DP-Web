@@ -1,0 +1,47 @@
+body {
+    font: "Adobe Gothic Std B";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aliceblue;
+
+}
+
+.profile-card {
+    text-align: center;
+    background-color: azure;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.profile-card img {
+    max-width: 50%;
+    border-radius: 50%;
+    max-height: 50%;
+}
+
+.profile-card h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.profile-card p {
+    color: #555;
+}
+
+.profile-card a {
+    text-decoration: none;
+    background-color: aqua;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+.profile-card a:hover {
+    background-color:blanchedalmond;
+}
