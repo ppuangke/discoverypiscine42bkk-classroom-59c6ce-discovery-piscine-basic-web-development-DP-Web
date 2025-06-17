@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลูกโป่งน้อย</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+            margin: 0;
+        }
+
+        #balloon {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="balloon"></div>
+
+    <script>
+        const balloon = document.getElementById("balloon");
+        const colors = ["red", "green", "blue"];
+        let colorIndex = 0;
+        let size = 200;
+        let shrinkInterval = null;
+
+        function updateBalloon() {
+            balloon.style.width = size + "px";
+            balloon.style.height = size + "px";
+            balloon.style.backgroundColor = colors[colorIndex];
+        }
+
+        balloon.addEventListener("click", () => {
+            // หยุดย่อ หากคลิก
+            clearInterval(shrinkInterval);
+            shrinkInterval = null;
+
+            size += 10;
+
+            if (size > 420) {
+                // ระเบิด
+                size = 200;
+                colorIndex = 0;
+            } else {
+                // เปลี่ยนสีถัดไป
+                colorIndex = (colorIndex + 1) % colors.length;
+            }
+
+            updateBalloon();
+        });
+
+        balloon.addEventListener("mouseleave", () => {
+            // เริ่มลดขนาดทีละ 5px ทุก 100ms จนถึง 200px
+            if (shrinkInterval) return; // ป้องกันซ้ำซ้อน
+
+            shrinkInterval = setInterval(() => {
+                if (size > 200) {
+                    size -= 5;
+                    // เปลี่ยนสีย้อนกลับ
+                    colorIndex = (colorIndex - 1 + colors.length) % colors.length;
+                    updateBalloon();
+                } else {
+                    clearInterval(shrinkInterval);
+                    shrinkInterval = null;
+                }
+            }, 100);
+        });
+
+        // หยุดย่อหากกลับเข้ามาในลูกโป่งอีกครั้ง
+        balloon.addEventListener("mouseenter", () => {
+            if (shrinkInterval) {
+                clearInterval(shrinkInterval);
+                shrinkInterval = null;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
