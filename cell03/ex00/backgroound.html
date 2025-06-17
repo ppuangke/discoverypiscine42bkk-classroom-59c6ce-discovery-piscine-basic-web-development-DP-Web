@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EAKEKEIIEI</title>
+    <link rel="stylesheet" href="./backgroound.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <p id="colorName">สีตอนนี้: white</p>
+        <button class="btn" onclick="changeColor()">Change Color</button>
+    </div>
+    <script>
+        function changeColor(){
+            const colors = ['red', 'green', 'blue', 'yellow','purple','orange'];
+            const randomColor = colors[Math.floor(Math.random()* colors.length)]
+            document.body.style.backgroundColor = randomColor;
+            document.getElementById('colorName').textContent = `สีตอนนี้: ${randomColor.charAt(0).toUpperCase() + randomColor.slice(1)}`;
+        }   
+
+    </script>
 </body>
+
 </html>
