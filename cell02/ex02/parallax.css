@@ -3,7 +3,7 @@ body,html {
   margin: 0;
   padding: 0;
   font: 400 15px/1.8 "Adobe Gothic Std B";
-  color: #0ba6ff;
+  color: #ffffff;
 }
 
 .p1,.p2 {
@@ -13,7 +13,6 @@ body,html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .p1 {
@@ -26,38 +25,15 @@ body,html {
   min-height: 100%;
 }
 
-
-
 .caption {
   position: absolute;
   left: 0;
   top: 50%;
   width: 100%;
   text-align: center;
-  color: #f14040;
 }
 
-.caption span.border {
-  background-color: #ff0000;
+.t1{
+  text-align:center;
   color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
 }
-
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Adobe Gothic Std B";
-  color: #111;
-}
-
-@media only screen and (max-device-width: 1024px) {
-
-  .bgimg-1,
-  .bgimg-2,
-  .bgimg-3 {
-    background-attachment: scroll;
-  }
-}
-.t1
