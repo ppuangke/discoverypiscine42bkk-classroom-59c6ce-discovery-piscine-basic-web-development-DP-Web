@@ -2,7 +2,10 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
 }
+  
 .parallax {
   min-height: 100vh;
   display: flex;
@@ -12,9 +15,10 @@ body, html {
   background-size: cover;
 }
 .p1 {
-  background-image: url('https://www.google.com/imgres?q=tralalero%20tralala&imgurl=https%3A%2F%2Felmercurio.com.mx%2Fwp-content%2Fuploads%2F2025%2F05%2Ftralalero-tralala.jpg&imgrefurl=https%3A%2F%2Felmercurio.com.mx%2Fviral%2Fque-es-tralalero-tralala-y-por-que-esta-rompiendo-el-internet&docid=lp_OS5Wc4lkuEM&tbnid=WfemQOicy9Hd-M&vet=12ahUKEwi7_tntvfeNAxVpnokEHSN_IrIQM3oECGUQAA..i&w=700&h=394&hcb=2&ved=2ahUKEwi7_tntvfeNAxVpnokEHSN_IrIQM3oECGUQAA');
+  background-image: url("https://www.google.com/imgres?q=tralalero%20tralala&imgurl=https%3A%2F%2Felmercurio.com.mx%2Fwp-content%2Fuploads%2F2025%2F05%2Ftralalero-tralala.jpg&imgrefurl=https%3A%2F%2Felmercurio.com.mx%2Fviral%2Fque-es-tralalero-tralala-y-por-que-esta-rompiendo-el-internet&docid=lp_OS5Wc4lkuEM&tbnid=WfemQOicy9Hd-M&vet=12ahUKEwi7_tntvfeNAxVpnokEHSN_IrIQM3oECGUQAA..i&w=700&h=394&hcb=2&ved=2ahUKEwi7_tntvfeNAxVpnokEHSN_IrIQM3oECGUQAA");
+
 }
 
 .p2 {
-  background-image: url('https://www.google.com/imgres?q=crocodilo%20bombardino&imgurl=https%3A%2F%2Fcdn-0001.qstv.on.epicgames.com%2FDeWFZjGciBtKpknWZf%2Fimage%2Flandscape_comp.jpeg&imgrefurl=https%3A%2F%2Fwww.fortnite.com%2F%40arzok%2F6411-0756-5726&docid=4w6m8XXJdEJFdM&tbnid=3zpc4y-rE-e-lM&vet=12ahUKEwjO9vePvveNAxWUhIkEHYETE-UQM3oECEwQAA..i&w=1920&h=1080&hcb=2&ved=2ahUKEwjO9vePvveNAxWUhIkEHYETE-UQM3oECEwQAA');
+  background-image: url("https://www.google.com/imgres?q=crocodilo%20bombardino&imgurl=https%3A%2F%2Fcdn-0001.qstv.on.epicgames.com%2FDeWFZjGciBtKpknWZf%2Fimage%2Flandscape_comp.jpeg&imgrefurl=https%3A%2F%2Fwww.fortnite.com%2F%40arzok%2F6411-0756-5726&docid=4w6m8XXJdEJFdM&tbnid=3zpc4y-rE-e-lM&vet=12ahUKEwjO9vePvveNAxWUhIkEHYETE-UQM3oECEwQAA..i&w=1920&h=1080&hcb=2&ved=2ahUKEwjO9vePvveNAxWUhIkEHYETE-UQM3oECEwQAA");
 }
