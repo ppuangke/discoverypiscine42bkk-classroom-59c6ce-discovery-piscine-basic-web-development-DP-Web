@@ -1,10 +1,16 @@
-.ii {
-    max-width: 50px;
-    max-height: 50px;
-    border-radius: 16px;
+body {
+    padding: 3rem 0;
+    background-color: #fff;
 }
 
-body {
-    background-color: rgb(189, 189, 189);
+.grid {
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     
 }
+/* .container{
+    width: 1140px;
+    margin: 0 auto;
+    
+} */
