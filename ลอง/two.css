@@ -1,4 +1,4 @@
-body {
+/* body {
     background-image: url("./webbg.png");
     width: auto;
     height: auto;
@@ -8,4 +8,133 @@ body {
     max-width: 50px;
     max-height: 50px;
     border-radius: 15px;
+} */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url("./webbg.png"); 
+    
+}
+
+/* Navbar Styling */
+.navbar {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #f7f7f7 !important; /* Ensure white background */
+}
+
+.navbar-brand img {
+    height: 50px; /* Adjust as needed */
+    width: auto;
+}
+.ok{
+    height: auto; 
+    width: 100%; 
+    margin-bottom: 20px;
+}
+.lolo{
+    height:auto;
+    width: 80px;
+}
+
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #555;
+    transition: color 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #f16f23;
+    background-color: rgb(229, 233, 226); /* Primary blue for active/hover state */
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* Scrollspy Content Styling */
+.scrollspy-example {
+    max-height: calc(100vh - 120px); /* Adjust height to fit viewport, considering navbar */
+    overflow-y: auto;
+    background-color: #fcfcfc !important; /* White background for content area */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+h2.display-4 {
+    font-weight: 700;
+    color: #ff8059; /* Darker color for headings */
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2.display-4::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #f75a32; /* Underline for headings */
+    border-radius: 2px;
+}
+
+p.lead {
+    font-size: 1.15rem;
+    color: #070707;
+    text-align: justify; /* Justify text for better readability */
+}
+
+/* Spacing and responsive adjustments */
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.mb-5 {
+    margin-bottom: 3rem !important;
+}
+
+hr {
+    margin: 3rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 0.5rem;
+    }
+
+    h2.display-4 {
+        font-size: 2.5rem; /* Adjust heading size for smaller screens */
+    }
+
+    p.lead {
+        font-size: 1rem; /* Adjust paragraph size for smaller screens */
+    }
+}
+
+@media (max-width: 575.98px) {
+    .scrollspy-example {
+        padding: 1rem !important;
+    }
+
+    h2.display-4 {
+        font-size: 2rem;
+    }
 }
