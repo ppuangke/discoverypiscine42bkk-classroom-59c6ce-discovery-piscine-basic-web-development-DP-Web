@@ -1,0 +1,137 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* แนะนำ Font-family ที่ดูสะอาดตา */
+    overflow-x: hidden; /* ป้องกัน scrollbar แนวนอนที่ไม่จำเป็น */
+}
+
+/* Background gradient for the main container */
+.container-fluid {
+    /* สีพื้นหลังไล่ระดับตามภาพ */
+    background: linear-gradient(to right, #e0e0e0, #ffffff, #e0e0e0);
+    min-height: 100vh; /* ให้สูงเต็มหน้าจอ */
+    padding-top: 80px; /* เพิ่ม padding ด้านบนเพื่อไม่ให้เนื้อหาชน Navbar */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: transparent; /* ทำให้ Navbar โปร่งใส */
+    position: absolute; /* วางตำแหน่ง Navbar เหนือเนื้อหา */
+    width: 100%;
+    z-index: 1000; /* ทำให้ Navbar อยู่ด้านบนสุด */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #555 !important; /* สีข้อความใน Navbar */
+    font-weight: 600; /* ทำให้ตัวอักษรหนาขึ้นเล็กน้อย */
+    transition: color 0.3s ease; /* เพิ่ม transition เมื่อ hover */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff !important; /* สีเมื่อ Hover (ตัวอย่าง) */
+}
+
+.bi-search {
+    font-size: 1.2rem; /* ขนาดไอคอนค้นหา */
+}
+
+/* Resume Heading Styling */
+h1 {
+    color: #444; /* สีตัวอักษร RESUME */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* เงาตัวอักษรเล็กน้อย */
+}
+
+/* Card Styling */
+.card {
+    background-color: rgba(255, 255, 255, 0.9); /* การ์ดโปร่งแสงเล็กน้อย */
+    border: none; /* ลบ border ของ Bootstrap card */
+    border-radius: 1rem; /* เพิ่มความโค้งมนให้ Card */
+    padding: 2.5rem; /* เพิ่ม padding ให้ Card ใหญ่ขึ้นและมีพื้นที่มากขึ้น */
+}
+
+.shadow-lg {
+    /* ปรับเงาให้ดูมีมิติมากขึ้น */
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+}
+
+/* Profile Image Styling within the circle */
+.rounded-circle {
+    width: 200px; /* ขนาดของวงกลมรูปภาพ */
+    height: 200px;
+    border: 2px solid #ddd; /* border รอบวงกลม */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* เงารอบวงกลม */
+}
+
+.rounded-circle img {
+    object-fit: cover; /* ตรวจสอบให้รูปภาพเต็มวงกลมโดยไม่ผิดเพี้ยน */
+}
+
+/* Styling for the list in the detailed About Me card */
+.card .list-unstyled li {
+    color: #555;
+    line-height: 1.8; /* เพิ่มระยะห่างระหว่างบรรทัด */
+    font-size: 1.05rem; /* ขนาดฟอนต์สำหรับรายการ */
+}
+
+.card .list-unstyled li.h5 {
+    font-weight: bold;
+    color: #333;
+    margin-top: 1.5rem; /* ระยะห่างด้านบนสำหรับหัวข้อ */
+    font-size: 1.2rem;
+}
+
+/* Button Styling */
+.btn-dark {
+    background-color: #343a40; /* สีปุ่ม About Me/Contact */
+    border-color: #343a40;
+    font-weight: 600;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-dark:hover {
+    background-color: #007bff; /* สีปุ่มเมื่อ Hover */
+    border-color: #007bff;
+}
+
+/* Responsive Adjustments for smaller screens (Optional but Recommended) */
+@media (max-width: 991.98px) { /* For devices smaller than large (lg) */
+    .navbar-collapse {
+        background-color: rgba(255, 255, 255, 0.9); /* เพิ่มพื้นหลังเมื่อ Navbar ยุบ */
+        border-radius: 0.5rem;
+        margin-top: 0.5rem;
+        padding: 1rem;
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-toggler {
+        border-color: rgba(0,0,0,.1);
+    }
+    .navbar-brand, .nav-link.me-3 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .container-fluid {
+        padding-top: 120px; /* ปรับ padding เมื่อ Navbar อาจใช้พื้นที่มากขึ้น */
+    }
+}
+
+@media (max-width: 767.98px) { /* For devices smaller than medium (md) */
+    .container-fluid {
+        padding-top: 100px;
+    }
+    h1 {
+        font-size: 2.5rem; /* ลดขนาดหัวข้อ RESUME */
+        margin-bottom: 3rem !important;
+    }
+    .card {
+        padding: 2rem; /* ลด padding ของ Card ลง */
+    }
+    .rounded-circle {
+        width: 150px; /* ลดขนาดวงกลมรูปภาพ */
+        height: 150px;
+    }
+    .card .list-unstyled li.h5 {
+        margin-top: 1rem;
+    }
+}
