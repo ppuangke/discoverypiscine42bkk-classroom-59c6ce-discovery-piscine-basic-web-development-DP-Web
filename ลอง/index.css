@@ -21,11 +21,11 @@ body {
 }
 
 .shadow-lg {
-    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important; /* ปรับเงาให้ชัดขึ้น */
+    box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.6) !important; /* ปรับเงาให้ชัดขึ้น */
 }
 
 /* สำหรับข้อความ RESUME */
 h1 {
-    color: #444; /* สีตัวอักษร RESUME */
+    color: #ffffff; /* สีตัวอักษร RESUME */
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }

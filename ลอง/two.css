@@ -1,4 +1,10 @@
-.ii{
+body {
+    background-image: url("./webbg.png");
+    width: auto;
+    height: auto;
+}
+
+.ii {
     max-width: 50px;
     max-height: 50px;
     border-radius: 15px;
