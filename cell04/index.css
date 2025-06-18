@@ -1,6 +1,9 @@
 body {
     padding: 3rem 0;
-    background-color: #fff;
+    background-image: url("./photo/webbg.png");
+    min-width: 100%;
+    min-height: 100%;
+    
 }
 
 .grid {
