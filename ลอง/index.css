@@ -1,0 +1,31 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* ตัวอย่าง font-family */
+    
+}
+
+.container-fluid {
+    /* เพิ่ม gradient background ตามภาพ */
+    background-image: url("./webbg.png");
+    width: auto;
+    height: auto;
+}
+
+.card {
+    background-color: #f1f1f1; /* การ์ดโปร่งแสงเล็กน้อย */
+    border: none; /* ลบ border ของ Bootstrap card */
+}
+
+/* หากต้องการปรับขนาดภาพโปรไฟล์เพิ่มเติม หรือเงา */
+.rounded-circle img {
+    object-fit: cover;
+}
+
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important; /* ปรับเงาให้ชัดขึ้น */
+}
+
+/* สำหรับข้อความ RESUME */
+h1 {
+    color: #444; /* สีตัวอักษร RESUME */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}

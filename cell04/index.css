@@ -1,8 +1,8 @@
 body {
     padding: 3rem 0;
     background-image: url("./photo/webbg.png");
-    min-width: 100%;
-    min-height: 100%;
+    height: auto;
+    width: auto;
     
 }
 
