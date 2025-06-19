@@ -23,10 +23,7 @@ body {
     background-color: #f7f7f7 !important; /* Ensure white background */
 }
 
-.navbar-brand img {
-    height: 50px; /* Adjust as needed */
-    width: auto;
-}
+
 .ok{
     height: auto; 
     width: 100%; 
@@ -35,6 +32,10 @@ body {
 .lolo{
     height:auto;
     width: 80px;
+}
+.lolol{
+    height:auto;
+    width: 50px;
 }
 
 
@@ -47,7 +48,7 @@ body {
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
     color: #f16f23;
-    background-color: rgb(229, 233, 226); /* Primary blue for active/hover state */
+    background-color: #f7f7f7; /* Primary blue for active/hover state */
 }
 
 .navbar-toggler {
@@ -83,11 +84,7 @@ h2.display-4::after {
     border-radius: 2px;
 }
 
-p.lead {
-    font-size: 1.15rem;
-    color: #070707;
-    text-align: justify; /* Justify text for better readability */
-}
+
 
 /* Spacing and responsive adjustments */
 .py-5 {
@@ -124,9 +121,7 @@ hr {
         font-size: 2.5rem; /* Adjust heading size for smaller screens */
     }
 
-    p.lead {
-        font-size: 1rem; /* Adjust paragraph size for smaller screens */
-    }
+
 }
 
 @media (max-width: 575.98px) {
