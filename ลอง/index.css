@@ -5,7 +5,7 @@ body {
 
 .container-fluid {
     /* เพิ่ม gradient background ตามภาพ */
-    background-image: url("./webbg.png");
+    background-image: url("./photo/webbg.png");
     width: auto;
     height: auto;
 }
